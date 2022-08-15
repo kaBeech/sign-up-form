@@ -15,21 +15,31 @@
         </div>
     </div>
     <div id="logoPanel" class="flex column">
-        <div id="description"></div>
+        <div id="description">
+            <p></p>
+            <p></p>
+        </div>
         <form action="">
             <fieldset>
                 <legend></legend>
                 <div id="fields" class="flex wrap">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                    <input id="firstName" name="firstName" type="text" placeholder="Jimi">
+                    <label for="firstName">First Name</label>
+                    <input id="lastName" name="lastName" type="text" placeholder="Hendrix">
+                    <label for="lastName">Last Name</label>
+                    <input id="email" name="email" type="email" placeholder="Any_Email@example.com" required>
+                    <label for="email">Email</label>
+                    <input id="phoneNum" name="phoneNum" type="text" placeholder="555-123-4567">
+                    <label for="phoneNum">Phone</label>
+                    <input id="password" name="password" type="password" placeholder="********" minlength="8" maxlength="65" required>
+                    <label for="password">Password</label>
+                    <input id="passwordConfirm" name="passwordConfirm" type="password" placeholder="********" minlength="8" maxlength="65"  required>
+                    <label for="passwordConfirm">Confirm Password</label>
                 </div>
             </fieldset>
-            <div id="logIn"></div>
+            <button id="createAccount" type="submit">Create Account</button>
         </form>
+        <p id="logIn"></p>
     </div>
 </body>
 </html>
